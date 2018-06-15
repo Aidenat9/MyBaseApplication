@@ -1,0 +1,16 @@
+把控件和position的数据绑定，
+1.editText使用前先settag（当前的position）
+2.在输入框的监听方法里根据位置相等，即是当前的position，赋值给datas
+int position = (int) etTitle.getTag();
+                if (position == layoutPosition) {
+                    String s1 = s.toString();
+                    item.setTitle(s1);
+                }
+
+3.再判断数据是否为空
+String title = item.getTitle();
+        if (!TextUtils.isEmpty(content)) {
+            etContent.setText(content);
+        } else {
+            etContent.setText("");
+        }
