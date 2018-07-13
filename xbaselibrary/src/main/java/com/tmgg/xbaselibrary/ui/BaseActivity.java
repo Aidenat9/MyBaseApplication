@@ -30,7 +30,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     //初始化Presenter
 
     protected boolean isTrans;
-    private BaseActivity mContext;
+    public BaseActivity mContext;
 
     protected abstract void initPresenter();
     //设置布局
@@ -43,7 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContext = this;
+            mContext = this;
         mProgressDialog = new ProgressDialog(this);
         mProgressDialog.setCancelable(false);
         AppManger.getAppManager().addActivity(this);

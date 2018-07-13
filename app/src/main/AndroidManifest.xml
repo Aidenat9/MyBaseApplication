@@ -26,7 +26,15 @@
         <receiver android:name=".servicedemo.MyLocalReceiver" />
 
         <activity android:name=".servicedemo.ServiceDemoActivity" />
-        <activity android:name=".animdemo.AnimDemoActivity"></activity>
+        <activity android:name=".animdemo.AnimDemoActivity" />
+        <service android:name=".service.MyAidlService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.youtu.myapplication.AIDL_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

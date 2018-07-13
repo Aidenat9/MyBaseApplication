@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerviewLibrary/pickerviewLibrary.iml" filepath="$PROJECT_DIR$/pickerviewLibrary/pickerviewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
       <module fileurl="file://$PROJECT_DIR$/xbaselibrary/xbaselibrary.iml" filepath="$PROJECT_DIR$/xbaselibrary/xbaselibrary.iml" />
     </modules>
   </component>

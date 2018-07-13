@@ -1,7 +1,6 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
 /.idea/libraries
 .DS_Store
 /build
@@ -59,6 +58,4 @@ gradle/
 .DS_Store
 */.idea/
 .idea/
-gradlew
-gradlew.bat
 unused.txt
