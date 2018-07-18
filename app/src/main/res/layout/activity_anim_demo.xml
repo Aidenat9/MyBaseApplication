@@ -19,7 +19,7 @@
             android:layout_height="80dp" />
         <TextView
             android:id="@+id/tv_description"
-            android:textColor="@color/color_black"
+            android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:text="属性动画测试"
             android:layout_marginLeft="30dp"

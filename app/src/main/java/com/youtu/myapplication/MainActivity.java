@@ -15,6 +15,7 @@ import com.youtu.myapplication.animdemo.AnimDemoActivity;
 import com.youtu.myapplication.iview.MainView;
 import com.youtu.myapplication.presenter.MainPresenter;
 import com.youtu.myapplication.servicedemo.ServiceDemoActivity;
+import com.youtu.myapplication.ui.TestScrollImageViewActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -46,14 +47,15 @@ public class MainActivity extends BaseActivity implements MainView {
         mPresenter.getNetData(url);
         //服务
         findViewById(R.id.btn_localservice).setOnClickListener(v ->
-                {
-                    startActivity(new Intent(getBaseContext(), ServiceDemoActivity.class));
-                }
+                startActivity(new Intent(mContext, ServiceDemoActivity.class))
         );
         //动画
-        findViewById(R.id.btn_anim).setOnClickListener(v -> {
-            startActivity(new Intent(getBaseContext(), AnimDemoActivity.class));
-        });
+        findViewById(R.id.btn_anim).setOnClickListener(v ->
+                startActivity(new Intent(mContext, AnimDemoActivity.class))
+        );
+        //scroll img
+        findViewById(R.id.btn_adImg).setOnClickListener(v ->
+                startActivity(new Intent(mContext, TestScrollImageViewActivity.class)));
         // TODO: 2018/7/11 测试 time
         btnPickView = findViewById(R.id.btn_pickTime);
 

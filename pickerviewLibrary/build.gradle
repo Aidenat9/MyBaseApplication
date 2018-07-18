@@ -21,15 +21,24 @@ android {
     lintOptions {
         abortOnError false
     }
+    def _BASENAME = "TestJar";
+    def _VERSION = "_V1.0";
+    def _DestinationPath = "build"; //生成jar包的位置
+    def zipFile = file('build/intermediates/bundles/release/classes.jar'); //待打包文件位置
+
+    task deleteBuild(type:Delete){
+        delete _DestinationPath + _BASENAME + _VERSION + ".jar"
+    }
+
+    task makeJar(type:Jar){
+        from zipTree(zipFile)
+        from fileTree(dir:'src/main',includes:['assets/**']) //将assets目录打入jar包
+        baseName = _BASENAME + _VERSION
+        destinationDir = file(_DestinationPath)
+    }
+
+    makeJar.dependsOn(deleteBuild, build)
 }
-task makeJar(type: Copy) {
-    delete 'build/libs/mylibrary.jar' //删除已经存在的jar包
-    from('build/intermediates/bundles/release/')//从该目录下加载要打包的文件
-    into('build/libs/')//jar包的保存目录
-    include('classes.jar','*.xml')//设置过滤，只打包classes文件
-    rename('classes.jar', 'mylibrary.jar')//重命名，mylibrary.jar 根据自己的需求设置
-}
-makeJar.dependsOn(build)
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://F:\MyApplication\MyBaseApplication\MyApplication.iml" filepath="F:\MyApplication\MyBaseApplication\MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBaseApplication.iml" filepath="$PROJECT_DIR$/MyBaseApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pickerviewLibrary/pickerviewLibrary.iml" filepath="$PROJECT_DIR$/pickerviewLibrary/pickerviewLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
+      <module fileurl="file://F:\MyApplication\MyBaseApplication\wheelview\wheelview.iml" filepath="F:\MyApplication\MyBaseApplication\wheelview\wheelview.iml" />
       <module fileurl="file://$PROJECT_DIR$/xbaselibrary/xbaselibrary.iml" filepath="$PROJECT_DIR$/xbaselibrary/xbaselibrary.iml" />
     </modules>
   </component>
